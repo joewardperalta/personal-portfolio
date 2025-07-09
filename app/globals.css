@@ -2,8 +2,18 @@
 
 :root {
   --primary-color: #171717;
-  --secondary-color: #979797;
+  --primary-color-light: #222222;
+  --secondary-color: #ffffff;
   --text-color: #888888;
+  --border-color: #333333;
+}
+
+@theme {
+  --color-primary: var(--primary-color);
+  --color-primary-light: var(--primary-color-light);
+  --color-secondary: var(--secondary-color);
+  --color-tertiary: var(--text-color);
+  --color-tertiary-dark: var(--border-color);
 }
 
 body {
@@ -12,4 +22,8 @@ body {
   font-family: arial, sans-serif;
   font-size: 1rem;
   line-height: 1.7;
+}
+
+.main-content {
+  padding: 0 0 0 19rem;
 }
