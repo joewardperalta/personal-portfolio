@@ -4,6 +4,7 @@
   --primary-color: #171717;
   --primary-color-light: #222222;
   --secondary-color: #ffffff;
+  --secondary-color-dark: #cecece;
   --text-color: #888888;
   --border-color: #333333;
 }
@@ -12,6 +13,7 @@
   --color-primary: var(--primary-color);
   --color-primary-light: var(--primary-color-light);
   --color-secondary: var(--secondary-color);
+  --color-secondary-dark: var(--secondary-color-dark);
   --color-tertiary: var(--text-color);
   --color-tertiary-dark: var(--border-color);
 }
