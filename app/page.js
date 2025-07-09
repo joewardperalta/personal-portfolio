@@ -6,6 +6,13 @@ import Wrapper from "@/components/containers/Wrapper";
 import CallToAction from "@/components/containers/CallToAction";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
+import SectionHeading from "@/components/typography/SectionHeading";
+import ProjectList from "@/components/containers/ProjectList";
+import ProjectCard from "@/components/ProjectCard";
+
+// Data
+
+import projects from "@/data/projects.json";
 
 export default function Page() {
   return (
@@ -28,6 +35,49 @@ export default function Page() {
             <PrimaryButton className="mr-3">Get in touch</PrimaryButton>
             <SecondaryButton>About me</SecondaryButton>
           </CallToAction>
+        </Wrapper>
+      </Section>
+
+      <Section>
+        <Wrapper>
+          <Headline>
+            <SectionHeading>Selected projects</SectionHeading>
+          </Headline>
+
+          <ProjectList>
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                image={project.img}
+                href={project.caseStudyLink}
+                title={project.title}
+                type={project.type}
+              />
+            ))}
+            {/* <li className="w-full">
+              <Link className="rounded-md overflow-hidden block" href="/">
+                <Image
+                  className="w-full h-full"
+                  src="/images/project-sample-1.jpg"
+                  width={1920}
+                  height={1080}
+                  alt=""
+                />
+              </Link>
+            </li>
+
+            <li className="w-full">
+              <Link className="rounded-md overflow-hidden block" href="/">
+                <Image
+                  className="w-full h-full"
+                  src="/images/project-sample-1.jpg"
+                  width={1920}
+                  height={1080}
+                  alt=""
+                />
+              </Link>
+            </li> */}
+          </ProjectList>
         </Wrapper>
       </Section>
     </main>
