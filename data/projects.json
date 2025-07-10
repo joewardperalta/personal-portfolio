@@ -1,21 +1,21 @@
 [
   {
     "id": 0,
-    "img": { "src": "/images/project-sample-1.jpg", "alt": "" },
+    "photo": { "src": "/images/project-sample-1.jpg", "alt": "" },
     "caseStudyLink": "/",
     "title": "Youth Crew",
     "type": "E-commerce"
   },
   {
     "id": 2,
-    "img": { "src": "/images/project-sample-2.png", "alt": "" },
+    "photo": { "src": "/images/project-sample-2.png", "alt": "" },
     "caseStudyLink": "/",
     "title": "Blinkpath",
     "type": "Creative agency"
   },
   {
     "id": 3,
-    "img": { "src": "/images/project-sample-3.png", "alt": "" },
+    "photo": { "src": "/images/project-sample-3.png", "alt": "" },
     "caseStudyLink": "/",
     "title": "Youth Crew",
     "type": "E-commerce"

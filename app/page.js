@@ -5,11 +5,8 @@ import Paragraph from "@/components/typography/Paragraph";
 import Title from "@/components/typography/Title";
 import Wrapper from "@/components/containers/Wrapper";
 import CallToAction from "@/components/containers/CallToAction";
-import PrimaryButton from "@/components/buttons/PrimaryButton";
-import SecondaryButton from "@/components/buttons/SecondaryButton";
 import SectionHeading from "@/components/typography/SectionHeading";
 import ProjectList from "@/components/containers/ProjectList";
-import ProjectCard from "@/components/cards/ProjectCard";
 import StackList from "@/components/containers/StackList";
 import SkillCard from "@/components/cards/SkillCard";
 
@@ -97,17 +94,7 @@ export default function Page() {
             <SectionHeading>Selected projects</SectionHeading>
           </Headline>
 
-          <ProjectList>
-            {projects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                image={project.img}
-                href={project.caseStudyLink}
-                title={project.title}
-                type={project.type}
-              />
-            ))}
-          </ProjectList>
+          <ProjectList projects={projects} />
         </Wrapper>
       </Section>
 
