@@ -66,7 +66,7 @@ export default function Page() {
           <Headline>
             <Title>
               Hey, I&apos;m Joeward.{" "}
-              <span className="block">I&apos;m a Full Stack Developer</span>
+              <span className="block">I&apos;m a Full Stack Developer.</span>
             </Title>
 
             <Paragraph className="max-w-[576px]">
