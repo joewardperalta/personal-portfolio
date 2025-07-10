@@ -8,52 +8,11 @@ import CallToAction from "@/components/containers/CallToAction";
 import SectionHeading from "@/components/typography/SectionHeading";
 import ProjectList from "@/components/containers/ProjectList";
 import StackList from "@/components/containers/StackList";
-import SkillCard from "@/components/cards/SkillCard";
-
-// Icons
-import HTMLIcon from "@/components/icons/tech/HTMLIcon";
-import ReactIcon from "@/components/icons/tech/ReactIcon";
-import TailwindCSSIcon from "@/components/icons/tech/TailwindCSSIcon";
-import BootstrapIcon from "@/components/icons/tech/BootstrapIcon";
-import JestIcon from "@/components/icons/tech/JestIcon";
-import JavaIcon from "@/components/icons/tech/JavaIcon";
-import CSSIcon from "@/components/icons/tech/CSSIcon";
-import JavaScriptIcon from "@/components/icons/tech/JavaScriptIcon";
-import SpringIcon from "@/components/icons/tech/SpringIcon";
-import PostmanIcon from "@/components/icons/tech/PostmanIcon";
-import MySQLIcon from "@/components/icons/tech/MySQLIcon";
-import MongoDBIcon from "@/components/icons/tech/MongoDBIcon";
-import DockerIcon from "@/components/icons/tech/DockerIcon";
-import VercelIcon from "@/components/icons/tech/VercelIcon";
-import GitIcon from "@/components/icons/tech/GitIcon";
-import GitHubIcon from "@/components/icons/tech/GitHubIcon";
-import JiraIcon from "@/components/icons/tech/JiraIcon";
 
 // Data
 import projects from "@/data/projects.json";
 import techStack from "@/data/tech-stack.json";
 import Link from "next/link";
-
-// Constants
-const techStackIconMap = {
-  html: <HTMLIcon />,
-  css: <CSSIcon />,
-  javascript: <JavaScriptIcon />,
-  reactjs: <ReactIcon />,
-  tailwindcss: <TailwindCSSIcon />,
-  bootstrap: <BootstrapIcon />,
-  jest: <JestIcon />,
-  java: <JavaIcon />,
-  spring: <SpringIcon />,
-  postman: <PostmanIcon />,
-  mysql: <MySQLIcon />,
-  mongodb: <MongoDBIcon />,
-  docker: <DockerIcon />,
-  vercel: <VercelIcon />,
-  git: <GitIcon />,
-  github: <GitHubIcon />,
-  jira: <JiraIcon />,
-};
 
 export default function Page() {
   return (
@@ -104,17 +63,7 @@ export default function Page() {
             <SectionHeading>My stack</SectionHeading>
           </Headline>
 
-          <StackList>
-            {techStack.map((skill) => (
-              <SkillCard
-                key={skill.id}
-                icon={techStackIconMap[skill.icon]}
-                title={skill.title}
-                role={skill.role}
-                href={skill.resourceLink}
-              />
-            ))}
-          </StackList>
+          <StackList skills={techStack} />
         </Wrapper>
       </Section>
     </main>

@@ -4,13 +4,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 // Icons
-import EnvelopeIcon from "./icons/tech/EnvelopeIcon";
-import HouseIcon from "./icons/tech/HouseIcon";
-import MonitorIcon from "./icons/socials/MonitorIcon";
-import UserIcon from "./icons/socials/UserIcon";
-import GitHubIcon from "./icons/socials/GitHubIcon";
-import LinkedInIcon from "./icons/socials/LinkedInIcon";
-import InstagramIcon from "./icons/socials/InstagramIcon";
+import {
+  EnvelopeIcon,
+  HouseIcon,
+  MonitorIcon,
+  UserIcon,
+  GitHubIcon,
+  LinkedInIcon,
+  InstagramIcon,
+} from "./icons";
 
 const navLinks = [
   {
