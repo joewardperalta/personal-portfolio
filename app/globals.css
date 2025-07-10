@@ -29,3 +29,37 @@ body {
 .main-content {
   padding: 0 0 0 271px;
 }
+
+/* Buttons */
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  text-transform: capitalize;
+}
+
+.primary-btn {
+  background-color: var(--secondary-color);
+  font-weight: 600;
+  transition: all;
+  transition-duration: 300ms;
+  color: var(--primary-color);
+  margin-right: 0.75rem;
+}
+.primary-btn:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+.secondary-btn {
+  background-color: var(--primary-color-light);
+  color: var(--secondary-color);
+  font-weight: 400;
+  transition: all;
+  transition-duration: 300ms;
+}
+.secondary-btn:hover {
+  background-color: var(--primary-color);
+}

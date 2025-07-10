@@ -35,6 +35,7 @@ import JiraIcon from "@/components/icons/tech/JiraIcon";
 // Data
 import projects from "@/data/projects.json";
 import techStack from "@/data/tech-stack.json";
+import Link from "next/link";
 
 // Constants
 const techStackIconMap = {
@@ -75,8 +76,16 @@ export default function Page() {
           </Headline>
 
           <CallToAction>
-            <PrimaryButton className="mr-3">Get in touch</PrimaryButton>
-            <SecondaryButton>About me</SecondaryButton>
+            <Link className="btn primary-btn" href="/contact">
+              Get in touch
+            </Link>
+            <Link
+              className="btn secondary-btn"
+              href="/resources/joeward_peralta_resume.pdf"
+              download
+            >
+              Download resume
+            </Link>
           </CallToAction>
         </Wrapper>
       </Section>

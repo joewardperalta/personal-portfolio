@@ -1,9 +1,3 @@
 export default function Button({ children, className }) {
-  return (
-    <button
-      className={`px-4 py-2 text-sm rounded-lg capitalize cursor-pointer border border-tertiary-dark ${className}`}
-    >
-      {children}
-    </button>
-  );
+  return <button className={`btn ${className}`}>{children}</button>;
 }
