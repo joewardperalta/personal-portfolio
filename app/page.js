@@ -69,15 +69,16 @@ export default function Page() {
               <span className="block">I&apos;m a Full Stack Developer</span>
             </Title>
 
-            <Paragraph>
-              I&apos;ve been crafting websites and digital experiences for the
-              past 10 years.
+            <Paragraph className="max-w-[576px]">
+              Diploma graduate in Computer Programming & Analysis with 2 years
+              of hands-on experience building web applications — ready to
+              contribute as a junior full stack developer.
             </Paragraph>
           </Headline>
 
           <CallToAction>
-            <Link className="btn primary-btn" href="/contact">
-              Get in touch
+            <Link className="btn primary-btn" href="/projects">
+              View projects
             </Link>
             <Link
               className="btn secondary-btn"
