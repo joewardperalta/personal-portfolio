@@ -62,7 +62,7 @@ export default function Page() {
   return (
     <main className="main-content">
       <Section>
-        <Wrapper className="border-b border-dashed border-tertiary-dark">
+        <Wrapper className="border-b border-dashed border-tertiary-dark pb-10 mb-5">
           <Headline>
             <Title>
               Hey, I&apos;m Joeward.{" "}
