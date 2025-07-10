@@ -1,0 +1,121 @@
+[
+  {
+    "id": 0,
+    "icon": "html",
+    "title": "HTML",
+    "role": "Content Structure",
+    "resourceLink": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+  },
+  {
+    "id": 1,
+    "icon": "css",
+    "title": "CSS",
+    "role": "Visual Style",
+    "resourceLink": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  },
+  {
+    "id": 2,
+    "icon": "javascript",
+    "title": "JavaScript",
+    "role": "Dynamic Interaction",
+    "resourceLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "id": 3,
+    "icon": "reactjs",
+    "title": "React.js",
+    "role": "UI Components",
+    "resourceLink": "https://react.dev/"
+  },
+  {
+    "id": 4,
+    "icon": "tailwindcss",
+    "title": "Tailwind CSS",
+    "role": "UI Framework",
+    "resourceLink": "https://tailwindcss.com/"
+  },
+  {
+    "id": 5,
+    "icon": "bootstrap",
+    "title": "Bootstrap",
+    "role": "UI Framework",
+    "resourceLink": "https://getbootstrap.com/"
+  },
+  {
+    "id": 6,
+    "icon": "jest",
+    "title": "Jest",
+    "role": "Unit Testing",
+    "resourceLink": "https://jestjs.io/docs/getting-started"
+  },
+  {
+    "id": 7,
+    "icon": "java",
+    "title": "Java",
+    "role": "Application Logic",
+    "resourceLink": "https://www.java.com/en/"
+  },
+  {
+    "id": 8,
+    "icon": "spring",
+    "title": "Spring",
+    "role": "API Framework",
+    "resourceLink": "https://spring.io/"
+  },
+  {
+    "id": 10,
+    "icon": "postman",
+    "title": "Postman",
+    "role": "API Testing",
+    "resourceLink": "https://www.postman.com/"
+  },
+  {
+    "id": 11,
+    "icon": "mysql",
+    "title": "MySQL",
+    "role": "Relational database",
+    "resourceLink": "https://www.mysql.com/"
+  },
+  {
+    "id": 12,
+    "icon": "mongodb",
+    "title": "MongoDB",
+    "role": "Document Storage",
+    "resourceLink": "https://www.mongodb.com/"
+  },
+  {
+    "id": 13,
+    "icon": "docker",
+    "title": "Docker",
+    "role": "App Container",
+    "resourceLink": "https://www.docker.com/"
+  },
+  {
+    "id": 14,
+    "icon": "vercel",
+    "title": "Vercel",
+    "role": "App Hosting",
+    "resourceLink": "https://vercel.com/"
+  },
+  {
+    "id": 15,
+    "icon": "git",
+    "title": "Git",
+    "role": "Version tracking",
+    "resourceLink": "https://git-scm.com/"
+  },
+  {
+    "id": 16,
+    "icon": "github",
+    "title": "GitHub",
+    "role": "Code hosting",
+    "resourceLink": "https://github.com/"
+  },
+  {
+    "id": 17,
+    "icon": "jira",
+    "title": "Jira",
+    "role": "Task Tracking",
+    "resourceLink": "https://www.atlassian.com/software/jira"
+  }
+]

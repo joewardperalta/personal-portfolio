@@ -4,13 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 // Icons
-import EnvelopeIcon from "./icons/EnvelopeIcon";
-import HouseIcon from "./icons/HouseIcon";
-import MonitorIcon from "./icons/MonitorIcon";
-import UserIcon from "./icons/UserIcon";
-import GitHubIcon from "./icons/GitHubIcon";
-import LinkedInIcon from "./icons/LinkedInIcon";
-import InstagramIcon from "./icons/InstagramIcon";
+import EnvelopeIcon from "./icons/tech/EnvelopeIcon";
+import HouseIcon from "./icons/tech/HouseIcon";
+import MonitorIcon from "./icons/socials/MonitorIcon";
+import UserIcon from "./icons/socials/UserIcon";
+import GitHubIcon from "./icons/socials/GitHubIcon";
+import LinkedInIcon from "./icons/socials/LinkedInIcon";
+import InstagramIcon from "./icons/socials/InstagramIcon";
 
 const navLinks = [
   {
