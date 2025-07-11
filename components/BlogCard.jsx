@@ -1,8 +1,11 @@
 import { Paragraph, SubHeading } from "@/components//Typography";
 import Image from "next/image";
 import Link from "next/link";
+import formatDate from "@/utils/formatDate";
 
 export default function BlogCard({ blog }) {
+  const datePosted = formatDate(blog.datePosted);
+
   return (
     <article>
       <Link
@@ -10,7 +13,7 @@ export default function BlogCard({ blog }) {
         border-tertiary-dark group"
         href={blog.pageLink}
       >
-        <div>
+        <div className="overflow-hidden">
           <Image
             className="w-full h-full object-cover transition-all duration-300 
           group-hover:scale-105"
@@ -23,7 +26,7 @@ export default function BlogCard({ blog }) {
 
         <div className="px-3 py-[1.125rem]">
           <Paragraph className="text-sm mb-4 pb-1 border-b border-dashed  border-tertiary-dark">
-            {blog.datePosted}
+            {datePosted}
           </Paragraph>
           <SubHeading className="!text-base">{blog.head.title}</SubHeading>
         </div>
