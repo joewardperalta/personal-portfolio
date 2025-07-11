@@ -3,7 +3,6 @@ import Link from "next/link";
 import Headline from "@/components/Headline";
 import Section from "@/components/Section";
 import Wrapper from "@/components/Wrapper";
-import CallToAction from "@/components/CallToAction";
 import { SectionHeading, Paragraph, Title } from "@/components/Typography";
 import ProjectList from "@/components/ProjectList";
 import StackList from "@/components/StackList";
@@ -31,7 +30,7 @@ export default function Page() {
             </Paragraph>
           </Headline>
 
-          <CallToAction>
+          <Flex>
             <Link className="btn primary-btn" href="/projects">
               View projects
             </Link>
@@ -42,7 +41,7 @@ export default function Page() {
             >
               Download resume
             </Link>
-          </CallToAction>
+          </Flex>
         </Wrapper>
       </Section>
 
