@@ -19,6 +19,7 @@ import {
   TailwindCSSIcon,
   VercelIcon,
 } from "./icons";
+import Grid from "./Grid";
 
 const icons = {
   html: <HTMLIcon />,
@@ -50,10 +51,12 @@ const icons = {
  */
 export default function StackList({ skills }) {
   return (
-    <ul className="grid grid-cols-4 gap-4">
-      {skills.map((skill) => (
-        <SkillCard key={skill.id} skill={skill} />
-      ))}
+    <ul>
+      <Grid columns={4}>
+        {skills.map((skill) => (
+          <SkillCard key={skill.id} skill={skill} />
+        ))}
+      </Grid>
     </ul>
   );
 }
