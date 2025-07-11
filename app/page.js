@@ -27,9 +27,6 @@ export default function Page() {
     <SkillCard key={skill.id} skill={skill} />
   ));
 
-  // Map blogs in a BlogCard component into an array
-  const blogCards = blogs.map((blog) => <BlogCard key={blog.id} blog={blog} />);
-
   return (
     <main className="main-content">
       <Section>
@@ -73,7 +70,13 @@ export default function Page() {
             </Flex>
           </Headline>
 
-          <List components={featuredProjectCards} columns={3} featured />
+          <List
+            items={projects}
+            renderItem={(item) => {
+              return item.featured && <ProjectCard key={item.id} data={item} />;
+            }}
+            columns={3}
+          />
         </Wrapper>
       </Section>
 
@@ -83,7 +86,12 @@ export default function Page() {
             <SectionHeading>My stack</SectionHeading>
           </Headline>
 
-          <List components={skillCards} columns={4} />
+          <List
+            items={techStack}
+            renderItem={(item) => <SkillCard key={item.id} data={item} />}
+            columns={4}
+            featured
+          />
         </Wrapper>
       </Section>
 
@@ -98,7 +106,13 @@ export default function Page() {
             </Flex>
           </Headline>
 
-          <List components={blogCards} columns={3} featured />
+          <div className="p-3 border border-dashed border-tertiary-dark rounded-lg">
+            <List
+              items={blogs}
+              renderItem={(item) => <BlogCard key={item.id} data={item} />}
+              columns={3}
+            />
+          </div>
         </Wrapper>
       </Section>
     </main>

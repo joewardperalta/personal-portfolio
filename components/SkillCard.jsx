@@ -42,17 +42,18 @@ const icons = {
 };
 
 /**
+ * Renders an individual skill's thumbnail and metadata
  *
- * @param {Object} skill - Skill object with its properties
+ * @param {Object} data - Skill object
  *
- * @returns Rendered list element with its metadata.
+ * @returns Rendered list element with data from each skill object
  */
-export default function SkillCard({ skill }) {
+export default function SkillCard({ data }) {
   return (
     <li className="w-full">
       <Link
         className="flex items-center group"
-        href={skill.resourceLink}
+        href={data.resourceLink}
         target="blank"
       >
         {/* SVG */}
@@ -61,12 +62,12 @@ export default function SkillCard({ skill }) {
         border-tertiary-dark rounded-lg group-hover:border-secondary 
         transition-all duration-300"
         >
-          {icons[skill.icon]}
+          {icons[data.icon]}
         </div>
 
         <div className="ml-3">
-          <SubHeading className="mb-0.5 !text-base">{skill.title}</SubHeading>
-          <Paragraph className="text-sm">{skill.role}</Paragraph>
+          <SubHeading className="mb-0.5 !text-base">{data.title}</SubHeading>
+          <Paragraph className="text-sm">{data.role}</Paragraph>
         </div>
       </Link>
     </li>
