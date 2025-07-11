@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { SubHeading, Paragraph } from "./Typography";
+import { SubHeading, Paragraph } from "@/components/Typography";
 
 /**
  * ProjectCard Component

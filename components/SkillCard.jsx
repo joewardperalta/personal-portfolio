@@ -1,4 +1,4 @@
-import { Paragraph, SubHeading } from "./Typography";
+import { Paragraph, SubHeading } from "@/components/Typography";
 import Link from "next/link";
 import {
   BootstrapIcon,

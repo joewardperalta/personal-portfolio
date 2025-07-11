@@ -1,4 +1,4 @@
-import { Paragraph, SubHeading } from "./typography";
+import { Paragraph, SubHeading } from "@/components//Typography";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,6 +14,7 @@ export default function BlogCard({ blog }) {
           className="w-full h-full transition-all duration-300 
           group-hover:scale-105"
           src={blog.photo.src}
+          alt={blog.photo.alt}
           width={1920}
           height={1080}
         />
