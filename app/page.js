@@ -5,13 +5,15 @@ import Section from "@/components/Section";
 import Wrapper from "@/components/Wrapper";
 import { SectionHeading, Paragraph, Title } from "@/components/Typography";
 import ProjectCard from "@/components/ProjectCard";
+import SkillCard from "@/components/SkillCard";
+import Flex from "@/components/Flex";
+import List from "@/components/List";
+import BlogCard from "@/components/BlogCard";
 
 // Data
 import projects from "@/data/projects.json";
 import techStack from "@/data/tech-stack.json";
-import Flex from "@/components/Flex";
-import List from "@/components/List";
-import SkillCard from "@/components/SkillCard";
+import blogs from "@/data/blogs.json";
 
 export default function Page() {
   // Map featured projects in a ProjectCard component into an array
@@ -24,6 +26,9 @@ export default function Page() {
   const skillCards = techStack.map((skill) => (
     <SkillCard key={skill.id} skill={skill} />
   ));
+
+  // Map blogs in a BlogCard component into an array
+  const blogCards = blogs.map((blog) => <BlogCard key={blog.id} blog={blog} />);
 
   return (
     <main className="main-content">
@@ -93,7 +98,7 @@ export default function Page() {
             </Flex>
           </Headline>
 
-          <List components={[]} columns={3} featured />
+          <List components={blogCards} columns={3} featured />
         </Wrapper>
       </Section>
     </main>

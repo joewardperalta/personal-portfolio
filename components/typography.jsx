@@ -3,7 +3,11 @@ export function Paragraph({ children, className }) {
 }
 
 export function SectionHeading({ children, className }) {
-  return <h2 className={`text-2xl text-secondary capitalize`}>{children}</h2>;
+  return (
+    <h2 className={`text-2xl text-secondary capitalize ${className}`}>
+      {children}
+    </h2>
+  );
 }
 
 export function SubHeading({ children, className }) {

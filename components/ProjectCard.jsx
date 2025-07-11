@@ -32,7 +32,7 @@ export default function ProjectCard({ project }) {
         {/* Project details */}
         <div className="absolute left-0 bottom-0 w-full p-2 ">
           <div
-            className="flex justify-between w-full px-2 py-2 bg-primary 
+            className="flex justify-between w-full p-2 bg-primary 
             rounded-sm capitalize border border-tertiary-dark"
           >
             <SubHeading>{project.title}</SubHeading>

@@ -65,7 +65,7 @@ export default function SkillCard({ skill }) {
         </div>
 
         <div className="ml-3">
-          <SubHeading className="mb-0.5">{skill.title}</SubHeading>
+          <SubHeading className="mb-0.5 !text-base">{skill.title}</SubHeading>
           <Paragraph className="text-sm">{skill.role}</Paragraph>
         </div>
       </Link>
