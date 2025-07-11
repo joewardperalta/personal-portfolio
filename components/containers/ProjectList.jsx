@@ -58,8 +58,8 @@ function ProjectCard({ project }) {
             className="flex justify-between w-full px-2 py-2 bg-primary 
             rounded-sm capitalize border border-tertiary-dark"
           >
-            <SubHeading>{project.photo.title}</SubHeading>
-            <Paragraph className="text-sm">{project.photo.type}</Paragraph>
+            <SubHeading>{project.title}</SubHeading>
+            <Paragraph className="text-sm">{project.type}</Paragraph>
           </div>
         </div>
       </Link>
