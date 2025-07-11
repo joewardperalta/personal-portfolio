@@ -81,6 +81,21 @@ export default function Page() {
           <List components={skillCards} columns={4} />
         </Wrapper>
       </Section>
+
+      <Section>
+        <Wrapper>
+          <Headline>
+            <Flex justifyContent="between">
+              <SectionHeading>Recent blog posts</SectionHeading>
+              <Link className="btn secondary-btn" href="/blog">
+                View blog
+              </Link>
+            </Flex>
+          </Headline>
+
+          <List components={[]} columns={3} featured />
+        </Wrapper>
+      </Section>
     </main>
   );
 }
