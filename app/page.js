@@ -11,6 +11,7 @@ import StackList from "@/components/StackList";
 // Data
 import projects from "@/data/projects.json";
 import techStack from "@/data/tech-stack.json";
+import Flex from "@/components/Flex";
 
 export default function Page() {
   return (
@@ -48,7 +49,12 @@ export default function Page() {
       <Section>
         <Wrapper>
           <Headline>
-            <SectionHeading>Selected projects</SectionHeading>
+            <Flex justifyContent="between">
+              <SectionHeading>Selected projects</SectionHeading>
+              <Link className="btn secondary-btn" href="/projects">
+                View projects
+              </Link>
+            </Flex>
           </Headline>
 
           <ProjectList projects={projects} />
