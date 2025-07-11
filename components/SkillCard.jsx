@@ -18,9 +18,9 @@ import {
   SpringIcon,
   TailwindCSSIcon,
   VercelIcon,
-} from "./icons";
-import Grid from "./Grid";
+} from "@/components/icons";
 
+// Icons
 const icons = {
   html: <HTMLIcon />,
   css: <CSSIcon />,
@@ -42,32 +42,12 @@ const icons = {
 };
 
 /**
- * Renders a list of SkillCard component
- *
- * @param {Arraay} skills - Array of skills
- *
- * @returns Rendered list of SkillCard component with real data
- * for each component.
- */
-export default function StackList({ skills }) {
-  return (
-    <ul>
-      <Grid columns={4}>
-        {skills.map((skill) => (
-          <SkillCard key={skill.id} skill={skill} />
-        ))}
-      </Grid>
-    </ul>
-  );
-}
-
-/**
  *
  * @param {Object} skill - Skill object with its properties
  *
  * @returns Rendered list element with its metadata.
  */
-function SkillCard({ skill }) {
+export default function SkillCard({ skill }) {
   return (
     <li className="w-full">
       <Link

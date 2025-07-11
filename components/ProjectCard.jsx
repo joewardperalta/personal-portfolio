@@ -1,34 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { SubHeading, Paragraph } from "./Typography";
-import Grid from "./Grid";
-
-/**
- * ProjectList Component
- * ---------------------
- * Renders a list of projects using the ProjectCard component.
- *
- * @param {Array} projects - Array of project objects.
- * @returns {JSX.Element} Rendered list of ProjectCard component wrapped in
- * un-ordered list.
- */
-export default function ProjectList({ projects }) {
-  return (
-    <ul
-      className={`p-3 border border-dashed border-tertiary-dark 
-        rounded-lg`}
-    >
-      <Grid columns={3}>
-        {projects.map(
-          (project) =>
-            project.featured && (
-              <ProjectCard key={project.id} project={project} />
-            )
-        )}
-      </Grid>
-    </ul>
-  );
-}
 
 /**
  * ProjectCard Component
@@ -39,7 +11,7 @@ export default function ProjectList({ projects }) {
  *
  * @returns Rendered list element with data for each project
  */
-function ProjectCard({ project }) {
+export default function ProjectCard({ project }) {
   return (
     <li className="w-full relative">
       <Link

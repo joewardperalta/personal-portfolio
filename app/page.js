@@ -4,15 +4,27 @@ import Headline from "@/components/Headline";
 import Section from "@/components/Section";
 import Wrapper from "@/components/Wrapper";
 import { SectionHeading, Paragraph, Title } from "@/components/Typography";
-import ProjectList from "@/components/ProjectList";
-import StackList from "@/components/StackList";
+import ProjectCard from "@/components/ProjectCard";
 
 // Data
 import projects from "@/data/projects.json";
 import techStack from "@/data/tech-stack.json";
 import Flex from "@/components/Flex";
+import List from "@/components/List";
+import SkillCard from "@/components/SkillCard";
 
 export default function Page() {
+  // Map featured projects in a ProjectCard component into an array
+  const featuredProjectCards = projects.map(
+    (project) =>
+      project.featured && <ProjectCard key={project.id} project={project} />
+  );
+
+  // Map tech stack in a SkillCard component into an array
+  const skillCards = techStack.map((skill) => (
+    <SkillCard key={skill.id} skill={skill} />
+  ));
+
   return (
     <main className="main-content">
       <Section>
@@ -56,7 +68,7 @@ export default function Page() {
             </Flex>
           </Headline>
 
-          <ProjectList projects={projects} />
+          <List components={featuredProjectCards} columns={3} featured />
         </Wrapper>
       </Section>
 
@@ -66,7 +78,7 @@ export default function Page() {
             <SectionHeading>My stack</SectionHeading>
           </Headline>
 
-          <StackList skills={techStack} />
+          <List components={skillCards} columns={4} />
         </Wrapper>
       </Section>
     </main>
