@@ -1,11 +1,259 @@
 [
   {
     "id": 0,
-    "photo": { "src": "/images/blog-sample-1.jpg", "alt": "" },
+    "photo": { "src": "/images/blog-sample-1.png", "alt": "" },
     "pageLink": "/",
     "datePosted": "2024-06-19",
     "head": {
       "title": "Designing for Accessibility: Making the Web Inclusive for All",
+      "introduction": [
+        {
+          "id": 0,
+          "text": "Accessibility in web design is not just a trend but a necessity. As the internet becomes an integral part of daily life, it's crucial to ensure that websites are usable by everyone, including people with disabilities. Designing for accessibility means creating digital experiences that are inclusive and considerate of all users, regardless of their abilities. This article explores the importance of web accessibility and offers practical steps for implementing it effectively."
+        }
+      ]
+    },
+    "body": {
+      "sections": [
+        {
+          "id": 0,
+          "heading": "The Importance of Accessibility",
+          "subsection": [
+            {
+              "id": 0,
+              "subheading": "Legal Compliance",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Many countries have laws and regulations requiring websites to be accessible to people with disabilities. In the United States, the Americans with Disabilities Act (ADA) and Section 508 of the Rehabilitation Act mandate web accessibility for government and public sector websites. Non-compliance can result in legal actions and fines, making it imperative for organizations to prioritize accessibility."
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "subheading": "Broader Audience Reach",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Accessible websites can be used by a larger audience, including people with visual, auditory, cognitive, and motor impairments. By designing with accessibility in mind, you ensure that your content is available to a more diverse group of users, expanding your reach and potential user base."
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "subheading": "Enhanced User Experience",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Accessibility improvements often lead to a better overall user experience for everyone. Features such as clear navigation, readable text, and well-structured content benefit all users, not just those with disabilities. An accessible website is typically more user-friendly and easier to navigate."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "subheading": "Positive Brand Image",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Commitment to accessibility demonstrates social responsibility and inclusivity. Brands that prioritize accessibility are viewed more favorably by users, enhancing their reputation and fostering loyalty among customers who value inclusivity."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "heading": "Practical Steps for Implementing Accessibility",
+          "subsection": [
+            {
+              "id": 0,
+              "subheading": "Understand Accessibility Guidelines",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Familiarize yourself with the Web Content Accessibility Guidelines (WCAG), a set of international standards for web accessibility. WCAG is organized around four principles: Perceivable, Operable, Understandable, and Robust (POUR). Each principle includes specific guidelines and success criteria to ensure web content is accessible."
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "subheading": "Use Semantic HTML",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Semantic HTML tags provide meaning to web content, making it easier for assistive technologies to interpret and navigate the site. Use appropriate HTML elements, such as <header>, <nav>, <main>, <article>, and <footer>, to structure your content."
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "subheading": "Ensure Keyboard Accessibility",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Many users rely on keyboards or other assistive devices to navigate websites. Ensure that all interactive elements, such as links, buttons, and form fields, are accessible via keyboard. Use logical tab order and provide visible focus indicators to help users know which element is currently selected."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "subheading": "Provide Text Alternatives",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Offer text alternatives for non-text content, such as images, videos, and audio files. Use alt attributes for images to describe their content and purpose. For video content, provide captions and transcripts to make the information accessible to users with hearing impairments."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "heading": "Conclusion",
+      "description": [
+        {
+          "id": 0,
+          "text": "Designing for accessibility is essential for creating an inclusive web that serves everyone, regardless of their abilities. By following accessibility guidelines, using semantic HTML, ensuring keyboard accessibility, providing text alternatives, designing for color contrast, creating accessible forms, implementing ARIA landmarks, testing with assistive technologies, offering scalable text, and providing skip navigation links, you can make your website more accessible and user-friendly."
+        },
+        {
+          "id": 1,
+          "text": "Prioritizing accessibility not only helps you comply with legal requirements but also enhances user satisfaction, broadens your audience reach, and builds a positive brand image. By committing to accessibility, you contribute to a more inclusive internet where everyone can access and benefit from the digital content and services you provide."
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "photo": { "src": "/images/blog-sample-2.png", "alt": "" },
+    "pageLink": "/",
+    "datePosted": "2024-06-15",
+    "head": {
+      "title": "Bridging the Gap: Collaboration Between Designers and Developer",
+      "introduction": [
+        {
+          "id": 0,
+          "text": "Accessibility in web design is not just a trend but a necessity. As the internet becomes an integral part of daily life, it's crucial to ensure that websites are usable by everyone, including people with disabilities. Designing for accessibility means creating digital experiences that are inclusive and considerate of all users, regardless of their abilities. This article explores the importance of web accessibility and offers practical steps for implementing it effectively."
+        }
+      ]
+    },
+    "body": {
+      "sections": [
+        {
+          "id": 0,
+          "heading": "The Importance of Accessibility",
+          "subsection": [
+            {
+              "id": 0,
+              "subheading": "Legal Compliance",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Many countries have laws and regulations requiring websites to be accessible to people with disabilities. In the United States, the Americans with Disabilities Act (ADA) and Section 508 of the Rehabilitation Act mandate web accessibility for government and public sector websites. Non-compliance can result in legal actions and fines, making it imperative for organizations to prioritize accessibility."
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "subheading": "Broader Audience Reach",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Accessible websites can be used by a larger audience, including people with visual, auditory, cognitive, and motor impairments. By designing with accessibility in mind, you ensure that your content is available to a more diverse group of users, expanding your reach and potential user base."
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "subheading": "Enhanced User Experience",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Accessibility improvements often lead to a better overall user experience for everyone. Features such as clear navigation, readable text, and well-structured content benefit all users, not just those with disabilities. An accessible website is typically more user-friendly and easier to navigate."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "subheading": "Positive Brand Image",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Commitment to accessibility demonstrates social responsibility and inclusivity. Brands that prioritize accessibility are viewed more favorably by users, enhancing their reputation and fostering loyalty among customers who value inclusivity."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "heading": "Practical Steps for Implementing Accessibility",
+          "subsection": [
+            {
+              "id": 0,
+              "subheading": "Understand Accessibility Guidelines",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Familiarize yourself with the Web Content Accessibility Guidelines (WCAG), a set of international standards for web accessibility. WCAG is organized around four principles: Perceivable, Operable, Understandable, and Robust (POUR). Each principle includes specific guidelines and success criteria to ensure web content is accessible."
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "subheading": "Use Semantic HTML",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Semantic HTML tags provide meaning to web content, making it easier for assistive technologies to interpret and navigate the site. Use appropriate HTML elements, such as <header>, <nav>, <main>, <article>, and <footer>, to structure your content."
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "subheading": "Ensure Keyboard Accessibility",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Many users rely on keyboards or other assistive devices to navigate websites. Ensure that all interactive elements, such as links, buttons, and form fields, are accessible via keyboard. Use logical tab order and provide visible focus indicators to help users know which element is currently selected."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "subheading": "Provide Text Alternatives",
+              "description": [
+                {
+                  "id": 0,
+                  "text": "Offer text alternatives for non-text content, such as images, videos, and audio files. Use alt attributes for images to describe their content and purpose. For video content, provide captions and transcripts to make the information accessible to users with hearing impairments."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "heading": "Conclusion",
+      "description": [
+        {
+          "id": 0,
+          "text": "Designing for accessibility is essential for creating an inclusive web that serves everyone, regardless of their abilities. By following accessibility guidelines, using semantic HTML, ensuring keyboard accessibility, providing text alternatives, designing for color contrast, creating accessible forms, implementing ARIA landmarks, testing with assistive technologies, offering scalable text, and providing skip navigation links, you can make your website more accessible and user-friendly."
+        },
+        {
+          "id": 1,
+          "text": "Prioritizing accessibility not only helps you comply with legal requirements but also enhances user satisfaction, broadens your audience reach, and builds a positive brand image. By committing to accessibility, you contribute to a more inclusive internet where everyone can access and benefit from the digital content and services you provide."
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "photo": { "src": "/images/blog-sample-3.png", "alt": "" },
+    "pageLink": "/",
+    "datePosted": "2024-06-13",
+    "head": {
+      "title": "User-Centered Design: Why It Matters and How to Implement It",
       "introduction": [
         {
           "id": 0,
