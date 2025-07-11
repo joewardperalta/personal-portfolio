@@ -19,9 +19,12 @@ export default function ProjectList({ projects }) {
         rounded-lg`}
     >
       <Grid columns={3}>
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+        {projects.map(
+          (project) =>
+            project.featured && (
+              <ProjectCard key={project.id} project={project} />
+            )
+        )}
       </Grid>
     </ul>
   );
