@@ -1,5 +1,4 @@
-import SubHeading from "../typography/SubHeading";
-import Paragraph from "../typography/Paragraph";
+import { Paragraph, SubHeading } from "./typography";
 import Link from "next/link";
 import {
   BootstrapIcon,
@@ -19,9 +18,8 @@ import {
   SpringIcon,
   TailwindCSSIcon,
   VercelIcon,
-} from "../icons";
+} from "./icons";
 
-// Skill icons
 const icons = {
   html: <HTMLIcon />,
   css: <CSSIcon />,

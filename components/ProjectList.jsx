@@ -1,7 +1,6 @@
 import Link from "next/link";
-import Paragraph from "@/components/typography/Paragraph";
 import Image from "next/image";
-import SubHeading from "../typography/SubHeading";
+import { SubHeading, Paragraph } from "./typography";
 
 /**
  * ProjectList Component

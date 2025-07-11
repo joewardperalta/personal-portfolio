@@ -1,13 +1,11 @@
 // Components
-import Headline from "@/components/containers/Headline";
-import Section from "@/components/containers/Section";
-import Paragraph from "@/components/typography/Paragraph";
-import Title from "@/components/typography/Title";
-import Wrapper from "@/components/containers/Wrapper";
-import CallToAction from "@/components/containers/CallToAction";
-import SectionHeading from "@/components/typography/SectionHeading";
-import ProjectList from "@/components/containers/ProjectList";
-import StackList from "@/components/containers/StackList";
+import Headline from "@/components/Headline";
+import Section from "@/components/Section";
+import Wrapper from "@/components/Wrapper";
+import CallToAction from "@/components/CallToAction";
+import { SectionHeading, Paragraph, Title } from "@/components/typography";
+import ProjectList from "@/components/ProjectList";
+import StackList from "@/components/StackList";
 
 // Data
 import projects from "@/data/projects.json";
