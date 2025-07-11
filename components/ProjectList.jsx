@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { SubHeading, Paragraph } from "./Typography";
+import Grid from "./Grid";
 
 /**
  * ProjectList Component
@@ -8,18 +9,20 @@ import { SubHeading, Paragraph } from "./Typography";
  * Renders a list of projects using the ProjectCard component.
  *
  * @param {Array} projects - Array of project objects.
- *
- * @returns {JSX.Element} Rendered list of ProjectCard component.
+ * @returns {JSX.Element} Rendered list of ProjectCard component wrapped in
+ * un-ordered list.
  */
 export default function ProjectList({ projects }) {
   return (
     <ul
       className={`p-3 border border-dashed border-tertiary-dark 
-        rounded-lg flex gap-3`}
+        rounded-lg`}
     >
-      {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
+      <Grid columns={3}>
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </Grid>
     </ul>
   );
 }

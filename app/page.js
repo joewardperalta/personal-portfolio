@@ -1,4 +1,5 @@
 // Components
+import Link from "next/link";
 import Headline from "@/components/Headline";
 import Section from "@/components/Section";
 import Wrapper from "@/components/Wrapper";
@@ -10,7 +11,6 @@ import StackList from "@/components/StackList";
 // Data
 import projects from "@/data/projects.json";
 import techStack from "@/data/tech-stack.json";
-import Link from "next/link";
 
 export default function Page() {
   return (
