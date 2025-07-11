@@ -16,17 +16,6 @@ import techStack from "@/data/tech-stack.json";
 import blogs from "@/data/blogs.json";
 
 export default function Page() {
-  // Map featured projects in a ProjectCard component into an array
-  const featuredProjectCards = projects.map(
-    (project) =>
-      project.featured && <ProjectCard key={project.id} project={project} />
-  );
-
-  // Map tech stack in a SkillCard component into an array
-  const skillCards = techStack.map((skill) => (
-    <SkillCard key={skill.id} skill={skill} />
-  ));
-
   return (
     <main className="main-content">
       <Section>
