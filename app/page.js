@@ -3,7 +3,7 @@ import Headline from "@/components/Headline";
 import Section from "@/components/Section";
 import Wrapper from "@/components/Wrapper";
 import CallToAction from "@/components/CallToAction";
-import { SectionHeading, Paragraph, Title } from "@/components/typography";
+import { SectionHeading, Paragraph, Title } from "@/components/Typography";
 import ProjectList from "@/components/ProjectList";
 import StackList from "@/components/StackList";
 
