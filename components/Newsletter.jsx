@@ -1,22 +1,21 @@
 import Form from "next/form";
 import FormInput from "@/components/forms/FormInput";
 import { PrimaryButton } from "@/components/Buttons";
-import Flex from "./Flex";
 import Headline from "./Headline";
 import { SectionHeading, Paragraph } from "./Typography";
 
 export default function Newsletter() {
   return (
-    <div className="px-8 py-16 bg-primary-light border border-dashed rounded-lg">
-      <Flex direction="column" alignItems="center">
-        <Headline className="text-center space-y-3">
-          <SectionHeading>Sign up to my newsletter</SectionHeading>
-          <Paragraph className="max-w-[340px]">
-            Stay up to date with my latest blog posts and exclusive offers.
-          </Paragraph>
-        </Headline>
-        <NewsletterForm />
-      </Flex>
+    <div className="px-8 py-16 bg-primary-light border border-dashed rounded-lg flex flex-col items-center gap-8">
+      {/* Main headlin */}
+      <Headline className="flex flex-col gap-4 text-center items-center">
+        <SectionHeading>Sign up to my newsletter</SectionHeading>
+        <Paragraph className="max-w-[21.25rem]">
+          Stay up to date with my latest blog posts and exclusive offers.
+        </Paragraph>
+      </Headline>
+
+      <NewsletterForm />
     </div>
   );
 }

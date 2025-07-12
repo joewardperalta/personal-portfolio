@@ -6,7 +6,6 @@ import Wrapper from "@/components/Wrapper";
 import { SectionHeading, Paragraph, Title } from "@/components/Typography";
 import ProjectCard from "@/components/ProjectCard";
 import SkillCard from "@/components/SkillCard";
-import Flex from "@/components/Flex";
 import List from "@/components/List";
 import BlogCard from "@/components/BlogCard";
 
@@ -20,22 +19,25 @@ import Newsletter from "@/components/Newsletter";
 export default function Page() {
   return (
     <main className="main-content">
+      {/* Hero section */}
       <Section>
-        <Wrapper className="border-b border-dashed border-tertiary-dark pb-10 mb-5">
-          <Headline>
+        <Wrapper className="pb-5">
+          {/* Main headline */}
+          <Headline className="flex flex-col gap-4">
             <Title>
               Hey, I&apos;m Joeward.{" "}
               <span className="block">I&apos;m a Full Stack Developer.</span>
             </Title>
 
-            <Paragraph className="max-w-[576px]">
+            <Paragraph className="max-w-[36rem]">
               Diploma graduate in Computer Programming & Analysis with 2 years
               of hands-on experience building web applications — ready to
               contribute as a junior full stack developer.
             </Paragraph>
           </Headline>
 
-          <Flex>
+          {/* CTA buttons */}
+          <div className="flex gap-2">
             <Link className="btn primary-btn" href="/projects">
               View projects
             </Link>
@@ -46,21 +48,25 @@ export default function Page() {
             >
               Download resume
             </Link>
-          </Flex>
+          </div>
+
+          {/* Horizontal line */}
+          <div className="border-b border-tertiary-dark w-full border-dashed"></div>
         </Wrapper>
       </Section>
 
+      {/* Projects section */}
       <Section>
         <Wrapper>
-          <Headline>
-            <Flex justifyContent="between">
-              <SectionHeading>Selected projects</SectionHeading>
-              <Link className="btn secondary-btn" href="/projects">
-                View projects
-              </Link>
-            </Flex>
+          {/* Main headline */}
+          <Headline className="flex justify-between items-center gap-2.5">
+            <SectionHeading>Selected projects</SectionHeading>
+            <Link className="btn secondary-btn" href="/projects">
+              All Projects
+            </Link>
           </Headline>
 
+          {/* List of projects */}
           <List
             items={projects}
             renderItem={(item) => {
@@ -71,12 +77,15 @@ export default function Page() {
         </Wrapper>
       </Section>
 
+      {/* Skills section */}
       <Section>
         <Wrapper>
-          <Headline>
-            <SectionHeading>My stack</SectionHeading>
+          {/* Main headline */}
+          <Headline className="flex justify-between items-center gap-2.5">
+            <SectionHeading>Tech Stack</SectionHeading>
           </Headline>
 
+          {/* List of skills/tech stack */}
           <List
             items={techStack}
             renderItem={(item) => <SkillCard key={item.id} data={item} />}
@@ -86,15 +95,15 @@ export default function Page() {
         </Wrapper>
       </Section>
 
+      {/* Blog section */}
       <Section>
         <Wrapper>
-          <Headline>
-            <Flex justifyContent="between">
-              <SectionHeading>Recent blog posts</SectionHeading>
-              <Link className="btn secondary-btn" href="/blog">
-                View blog
-              </Link>
-            </Flex>
+          {/* Main headlin */}
+          <Headline className="flex justify-between items-center gap-2.5">
+            <SectionHeading>Recent Blog Posts</SectionHeading>
+            <Link className="btn secondary-btn" href="/projects">
+              View Blog
+            </Link>
           </Headline>
 
           <div className="p-3 border border-dashed border-tertiary-dark rounded-lg">
