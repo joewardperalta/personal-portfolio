@@ -3,7 +3,12 @@ import Link from "next/link";
 import Headline from "@/components/Headline";
 import Section from "@/components/Section";
 import Wrapper from "@/components/Wrapper";
-import { SectionHeading, Paragraph, Title } from "@/components/Typography";
+import {
+  SectionHeading,
+  Paragraph,
+  Title,
+  SubHeading,
+} from "@/components/Typography";
 import ProjectCard from "@/components/ProjectCard";
 import SkillCard from "@/components/SkillCard";
 import Flex from "@/components/Flex";
@@ -14,6 +19,8 @@ import BlogCard from "@/components/BlogCard";
 import projects from "@/data/projects.json";
 import techStack from "@/data/tech-stack.json";
 import blogs from "@/data/blogs.json";
+import sortBlogPostsByDate from "@/utils/sortBlogPostsByDate";
+import NewsletterForm from "@/components/forms/NewsletterForm";
 
 export default function Page() {
   return (
@@ -99,8 +106,26 @@ export default function Page() {
             <List
               items={blogs}
               renderItem={(item) => <BlogCard key={item.id} data={item} />}
+              sortFunction={sortBlogPostsByDate}
               columns={3}
             />
+          </div>
+        </Wrapper>
+      </Section>
+
+      <Section>
+        <Wrapper>
+          <div className="px-8 py-16 bg-primary-light border border-dashed rounded-lg">
+            <Flex direction="column" alignItems="center">
+              <Headline className="text-center space-y-3">
+                <SectionHeading> Sign up to my newsletter</SectionHeading>
+                <Paragraph className="max-w-[340px]">
+                  Stay up to date with my latest blog posts and exclusive
+                  offers.
+                </Paragraph>
+              </Headline>
+              <NewsletterForm />
+            </Flex>
           </div>
         </Wrapper>
       </Section>

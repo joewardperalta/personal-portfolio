@@ -6,5 +6,5 @@
  * @returns {Array} - Sorted array.
  */
 export default function sortBlogPostsByDate(posts) {
-  return posts.sort((a, b) => new Date(a.datePosted) - new Date(b.datePosted));
+  return posts.sort((a, b) => new Date(b.datePosted) - new Date(a.datePosted));
 }

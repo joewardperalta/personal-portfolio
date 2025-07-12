@@ -5,6 +5,7 @@
   --primary-color-light: #222222;
   --secondary-color: #ffffff;
   --secondary-color-dark: #cecece;
+  --text-color-light: #b4b4b4;
   --text-color: #888888;
   --border-color: #505050;
 }
@@ -47,7 +48,6 @@ body {
   transition: all;
   transition-duration: 300ms;
   color: var(--primary-color);
-  margin-right: 0.75rem;
 }
 .primary-btn:hover {
   background-color: var(--secondary-color-dark);
