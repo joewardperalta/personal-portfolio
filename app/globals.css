@@ -27,7 +27,8 @@ body {
   line-height: 1.7;
 }
 
-.main-content {
+.main-content,
+.footer {
   padding: 0 0 0 271px;
 }
 
@@ -62,4 +63,13 @@ body {
 }
 .secondary-btn:hover {
   background-color: var(--primary-color);
+}
+
+.tertiary-btn {
+  color: white;
+  transition: all;
+  transition-duration: 300ms;
+}
+.tertiary-btn:hover {
+  color: var(--color-tertiary);
 }
