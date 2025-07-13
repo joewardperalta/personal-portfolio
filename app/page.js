@@ -9,11 +9,14 @@ import SkillCard from "@/components/SkillCard";
 import List from "@/components/List";
 import BlogCard from "@/components/BlogCard";
 
+// Utilities
+import sortBlogPostsByDate from "@/utils/sortBlogPostsByDate";
+
 // Data
 import projects from "@/data/projects.json";
 import techStack from "@/data/tech-stack.json";
 import blogs from "@/data/blogs.json";
-import sortBlogPostsByDate from "@/utils/sortBlogPostsByDate";
+
 import Newsletter from "@/components/Newsletter";
 
 export default function Page() {
