@@ -22,13 +22,5 @@
     "title": "Capture",
     "type": "Tour",
     "featured": true
-  },
-  {
-    "id": 4,
-    "photo": { "src": "/images/project-sample-3.png", "alt": "" },
-    "caseStudyLink": "/",
-    "title": "WebHub",
-    "type": "Design Agency",
-    "featured": false
   }
 ]
