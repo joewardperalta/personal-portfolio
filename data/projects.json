@@ -19,16 +19,16 @@
     "id": 3,
     "photo": { "src": "/images/project-sample-3.png", "alt": "" },
     "caseStudyLink": "/",
-    "title": "Youth Crew",
-    "type": "E-commerce",
+    "title": "Capture",
+    "type": "Tour",
     "featured": true
   },
   {
     "id": 4,
     "photo": { "src": "/images/project-sample-3.png", "alt": "" },
     "caseStudyLink": "/",
-    "title": "Youth Crew",
-    "type": "E-commerce",
+    "title": "WebHub",
+    "type": "Design Agency",
     "featured": false
   }
 ]

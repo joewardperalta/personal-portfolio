@@ -1,4 +1,9 @@
-import Grid from "./Grid";
+const columnsClassMap = {
+  1: "grid-cols-1",
+  2: "grid-cols-2",
+  3: "grid-cols-3",
+  4: "grid-cols-4",
+};
 
 /**
  * Renders a grid of items using custom render function.
@@ -22,7 +27,9 @@ export default function List({
 
   return (
     <ul>
-      <Grid columns={columns}>{sortedItems.map(renderItem)}</Grid>
+      <div className={`grid ${columnsClassMap[columns]} gap-4`}>
+        {sortedItems.map(renderItem)}
+      </div>
     </ul>
   );
 }
