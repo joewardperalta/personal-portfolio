@@ -7,6 +7,7 @@ import { SectionHeading, Paragraph, Title } from "@/components/Typography";
 import Newsletter from "@/components/Newsletter";
 import ProjectList from "@/components/ProjectList";
 import BlogList from "@/components/BlogList";
+import SkillList from "@/components/SkillList";
 
 export default function Page() {
   return (
@@ -72,12 +73,7 @@ export default function Page() {
           </Headline>
 
           {/* List of skills/tech stack */}
-          {/* <List
-            items={techStack}
-            renderItem={(item) => <SkillCard key={item.id} data={item} />}
-            columns={4}
-            featured
-          /> */}
+          <SkillList columns={4} />
         </Wrapper>
       </Section>
 

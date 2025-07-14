@@ -5,18 +5,12 @@ import Headline from "@/components/Headline";
 import { Title, Paragraph, SectionHeading } from "@/components/Typography";
 import Link from "next/link";
 import Image from "next/image";
-import List from "@/components/List";
-import SkillCard from "@/components/SkillCard";
 import ExperienceCard from "@/components/ExperienceCard";
-import BlogCard from "@/components/BlogCard";
-
-// Utilities
-import sortBlogPostsByDate from "@/utils/sortListByDate";
+import SkillList from "@/components/SkillList";
+import BlogList from "@/components/BlogList";
 
 // Data
 import projects from "@/data/projects.json";
-import techStack from "@/data/tech-stack.json";
-import blogs from "@/data/blogs.json";
 
 export default function Page() {
   return (
@@ -138,12 +132,7 @@ export default function Page() {
           </Headline>
 
           {/* List of skills/tech stack */}
-          <List
-            items={techStack}
-            renderItem={(item) => <SkillCard key={item.id} data={item} />}
-            columns={4}
-            featured
-          />
+          <SkillList columns={4} />
         </Wrapper>
       </Section>
 
@@ -159,12 +148,7 @@ export default function Page() {
           </Headline>
 
           <div className="p-3 border border-dashed border-tertiary-dark rounded-lg">
-            <List
-              items={blogs}
-              renderItem={(item) => <BlogCard key={item.id} data={item} />}
-              sortFunction={sortBlogPostsByDate}
-              columns={3}
-            />
+            <BlogList columns={3} />
           </div>
         </Wrapper>
       </Section>
