@@ -6,6 +6,7 @@ import Wrapper from "@/components/Wrapper";
 import { SectionHeading, Paragraph, Title } from "@/components/Typography";
 import Newsletter from "@/components/Newsletter";
 import ProjectList from "@/components/ProjectList";
+import BlogList from "@/components/BlogList";
 
 export default function Page() {
   return (
@@ -92,12 +93,7 @@ export default function Page() {
           </Headline>
 
           <div className="p-3 border border-dashed border-tertiary-dark rounded-lg">
-            {/* <List
-              items={blogs}
-              renderItem={(item) => <BlogCard key={item.id} data={item} />}
-              sortFunction={sortBlogPostsByDate}
-              columns={3}
-            /> */}
+            <BlogList columns={3} />
           </div>
         </Wrapper>
       </Section>

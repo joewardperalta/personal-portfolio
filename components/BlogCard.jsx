@@ -11,7 +11,7 @@ import formatDate from "@/utils/formatDate";
  * @returns Rendered list element with data from each blog object
  */
 export default function BlogCard({ data }) {
-  const datePosted = formatDate(data.datePosted);
+  const datePosted = formatDate(data.endDate);
 
   return (
     <article>
@@ -35,7 +35,7 @@ export default function BlogCard({ data }) {
           <Paragraph className="text-sm mb-4 pb-1 border-b border-dashed  border-tertiary-dark">
             {datePosted}
           </Paragraph>
-          <SubHeading className="!text-base">{data.head.title}</SubHeading>
+          <SubHeading className="!text-base">{data.title}</SubHeading>
         </div>
       </Link>
     </article>

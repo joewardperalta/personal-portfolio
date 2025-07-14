@@ -4,15 +4,13 @@
     "photo": { "src": "/images/blog-sample-1.png", "alt": "" },
     "pageLink": "/",
     "endDate": "2024-06-19",
-    "head": {
-      "title": "Designing for Accessibility: Making the Web Inclusive for All",
-      "introduction": [
-        {
-          "id": 0,
-          "text": "Accessibility in web design is not just a trend but a necessity. As the internet becomes an integral part of daily life, it's crucial to ensure that websites are usable by everyone, including people with disabilities. Designing for accessibility means creating digital experiences that are inclusive and considerate of all users, regardless of their abilities. This article explores the importance of web accessibility and offers practical steps for implementing it effectively."
-        }
-      ]
-    },
+    "title": "Designing for Accessibility: Making the Web Inclusive for All",
+    "introduction": [
+      {
+        "id": 0,
+        "text": "Accessibility in web design is not just a trend but a necessity. As the internet becomes an integral part of daily life, it's crucial to ensure that websites are usable by everyone, including people with disabilities. Designing for accessibility means creating digital experiences that are inclusive and considerate of all users, regardless of their abilities. This article explores the importance of web accessibility and offers practical steps for implementing it effectively."
+      }
+    ],
     "body": {
       "sections": [
         {
@@ -128,15 +126,13 @@
     "photo": { "src": "/images/blog-sample-2.png", "alt": "" },
     "pageLink": "/",
     "endDate": "2024-06-15",
-    "head": {
-      "title": "Bridging the Gap: Collaboration Between Designers and Developer",
-      "introduction": [
-        {
-          "id": 0,
-          "text": "Accessibility in web design is not just a trend but a necessity. As the internet becomes an integral part of daily life, it's crucial to ensure that websites are usable by everyone, including people with disabilities. Designing for accessibility means creating digital experiences that are inclusive and considerate of all users, regardless of their abilities. This article explores the importance of web accessibility and offers practical steps for implementing it effectively."
-        }
-      ]
-    },
+    "title": "Bridging the Gap: Collaboration Between Designers and Developer",
+    "introduction": [
+      {
+        "id": 0,
+        "text": "Accessibility in web design is not just a trend but a necessity. As the internet becomes an integral part of daily life, it's crucial to ensure that websites are usable by everyone, including people with disabilities. Designing for accessibility means creating digital experiences that are inclusive and considerate of all users, regardless of their abilities. This article explores the importance of web accessibility and offers practical steps for implementing it effectively."
+      }
+    ],
     "body": {
       "sections": [
         {
@@ -252,15 +248,13 @@
     "photo": { "src": "/images/blog-sample-3.png", "alt": "" },
     "pageLink": "/",
     "endDate": "2024-06-13",
-    "head": {
-      "title": "User-Centered Design: Why It Matters and How to Implement It",
-      "introduction": [
-        {
-          "id": 0,
-          "text": "Accessibility in web design is not just a trend but a necessity. As the internet becomes an integral part of daily life, it's crucial to ensure that websites are usable by everyone, including people with disabilities. Designing for accessibility means creating digital experiences that are inclusive and considerate of all users, regardless of their abilities. This article explores the importance of web accessibility and offers practical steps for implementing it effectively."
-        }
-      ]
-    },
+    "title": "User-Centered Design: Why It Matters and How to Implement It",
+    "introduction": [
+      {
+        "id": 0,
+        "text": "Accessibility in web design is not just a trend but a necessity. As the internet becomes an integral part of daily life, it's crucial to ensure that websites are usable by everyone, including people with disabilities. Designing for accessibility means creating digital experiences that are inclusive and considerate of all users, regardless of their abilities. This article explores the importance of web accessibility and offers practical steps for implementing it effectively."
+      }
+    ],
     "body": {
       "sections": [
         {
