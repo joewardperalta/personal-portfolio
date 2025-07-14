@@ -6,6 +6,7 @@ import SearchProjects from "@/components/SearchProjects";
 
 // Data
 import projects from "@/data/projects.json";
+import BlogList from "@/components/BlogList";
 
 export default function Page() {
   return (
@@ -19,7 +20,7 @@ export default function Page() {
           </Headline>
 
           {/* List all the filtered projects based on search */}
-          <SearchProjects projects={projects} />
+          <BlogList columns={3} searchable />
         </Wrapper>
       </Section>
     </main>

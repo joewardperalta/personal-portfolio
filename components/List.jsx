@@ -30,13 +30,12 @@ export default function List({
 }) {
   const [searchString, setSearchString] = useState("");
 
-  // Filter items by title or type
+  // Filter items by title
   const filtered = items.filter((item) => {
     // Cleans up the search string with any special characters
     let cleanSearchString = searchString.toLowerCase().replace(/[^a-z]/g, "");
 
     if (item.title.toLowerCase().includes(cleanSearchString)) return true;
-    else if (item.type.toLowerCase().includes(cleanSearchString)) return true;
     else return false;
   });
 
