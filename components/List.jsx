@@ -1,3 +1,9 @@
+"use client";
+
+import { useState } from "react";
+import Search from "./Search";
+import sortListByDate from "@/utils/sortListByDate";
+
 const columnsClassMap = {
   1: "grid-cols-1",
   2: "grid-cols-2",
@@ -13,23 +19,43 @@ const columnsClassMap = {
  * Should return a React element.
  * @param {number} columns - Number of columns to display in the grid
  * layout.
- * @param {Function} sortFunction - Function to sort the items
+ * @param {Function}  searchable - Boolean to identify the list to be searchable.
  * @returns {JSX.Element} - A list wrapped in a Grid component.
  */
 export default function List({
   items = [],
   renderItem,
-  sortFunction,
   columns = 1,
+  searchable = false,
 }) {
-  // Sorts the item array based on sortFunction.
-  const sortedItems = sortFunction ? sortFunction(items) : items;
+  const [searchString, setSearchString] = useState("");
+
+  // Filter items by title or type
+  const filtered = items.filter((item) => {
+    // Cleans up the search string with any special characters
+    let cleanSearchString = searchString.toLowerCase().replace(/[^a-z]/g, "");
+
+    if (item.title.toLowerCase().includes(cleanSearchString)) return true;
+    else if (item.type.toLowerCase().includes(cleanSearchString)) return true;
+    else return false;
+  });
+
+  // Sort items by date (latest first)
+  const sorted = sortListByDate(filtered);
 
   return (
-    <ul>
-      <div className={`grid ${columnsClassMap[columns]} gap-4`}>
-        {sortedItems.map(renderItem)}
-      </div>
-    </ul>
+    <>
+      {searchable && (
+        <div className="w-fit">
+          <Search inputChange={(e) => setSearchString(e.target.value)} />
+        </div>
+      )}
+
+      <ul>
+        <div className={`grid ${columnsClassMap[columns]} gap-4`}>
+          {sorted.map(renderItem)}
+        </div>
+      </ul>
+    </>
   );
 }

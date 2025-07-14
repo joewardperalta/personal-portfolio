@@ -1,9 +1,11 @@
-"use client";
 import Section from "@/components/Section";
-import { Title } from "@/components/Typography";
 import Headline from "@/components/Headline";
 import Wrapper from "@/components/Wrapper";
-import ProjectList from "@/components/ProjectList";
+import { Title } from "@/components/Typography";
+import SearchProjects from "@/components/SearchProjects";
+
+// Data
+import projects from "@/data/projects.json";
 
 export default function Page() {
   return (
@@ -13,10 +15,11 @@ export default function Page() {
         <Wrapper className="pb-5">
           {/* Main headline */}
           <Headline className="flex flex-col gap-4">
-            <Title>Recent Projects</Title>
+            <Title>My Blog</Title>
           </Headline>
 
-          <ProjectList columns={2} searchable />
+          {/* List all the filtered projects based on search */}
+          <SearchProjects projects={projects} />
         </Wrapper>
       </Section>
     </main>

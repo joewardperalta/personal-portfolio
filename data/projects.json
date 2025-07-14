@@ -4,8 +4,10 @@
     "photo": { "src": "/images/project-sample-1.jpg", "alt": "" },
     "caseStudyLink": "/",
     "title": "Youth Crew",
-    "type": "E-commerce",
-    "featured": true
+    "type": "Ecommerce",
+    "featured": true,
+    "startDate": "2024-06-30",
+    "endDate": "2024-07-30"
   },
   {
     "id": 2,
@@ -13,7 +15,9 @@
     "caseStudyLink": "/",
     "title": "Blinkpath",
     "type": "Creative agency",
-    "featured": true
+    "featured": true,
+    "startDate": "2024-08-01",
+    "endDate": "2024-09-01"
   },
   {
     "id": 3,
@@ -21,6 +25,8 @@
     "caseStudyLink": "/",
     "title": "Capture",
     "type": "Tour",
-    "featured": true
+    "featured": true,
+    "startDate": "2024-10-02",
+    "endDate": "2024-11-02"
   }
 ]

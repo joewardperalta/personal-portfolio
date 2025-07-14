@@ -32,6 +32,11 @@ const navLinks = [
   },
   {
     icon: <EnvelopeIcon />,
+    label: "Blog",
+    href: "/blog",
+  },
+  {
+    icon: <EnvelopeIcon />,
     label: "Contact",
     href: "/contact",
   },

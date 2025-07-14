@@ -11,7 +11,7 @@ import ExperienceCard from "@/components/ExperienceCard";
 import BlogCard from "@/components/BlogCard";
 
 // Utilities
-import sortBlogPostsByDate from "@/utils/sortBlogPostsByDate";
+import sortBlogPostsByDate from "@/utils/sortListByDate";
 
 // Data
 import projects from "@/data/projects.json";

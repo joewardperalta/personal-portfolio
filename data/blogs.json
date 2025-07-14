@@ -3,7 +3,7 @@
     "id": 0,
     "photo": { "src": "/images/blog-sample-1.png", "alt": "" },
     "pageLink": "/",
-    "datePosted": "2024-06-19",
+    "endDate": "2024-06-19",
     "head": {
       "title": "Designing for Accessibility: Making the Web Inclusive for All",
       "introduction": [
@@ -127,7 +127,7 @@
     "id": 1,
     "photo": { "src": "/images/blog-sample-2.png", "alt": "" },
     "pageLink": "/",
-    "datePosted": "2024-06-15",
+    "endDate": "2024-06-15",
     "head": {
       "title": "Bridging the Gap: Collaboration Between Designers and Developer",
       "introduction": [
@@ -251,7 +251,7 @@
     "id": 2,
     "photo": { "src": "/images/blog-sample-3.png", "alt": "" },
     "pageLink": "/",
-    "datePosted": "2024-06-13",
+    "endDate": "2024-06-13",
     "head": {
       "title": "User-Centered Design: Why It Matters and How to Implement It",
       "introduction": [

@@ -4,20 +4,8 @@ import Headline from "@/components/Headline";
 import Section from "@/components/Section";
 import Wrapper from "@/components/Wrapper";
 import { SectionHeading, Paragraph, Title } from "@/components/Typography";
-import ProjectCard from "@/components/ProjectCard";
-import SkillCard from "@/components/SkillCard";
-import List from "@/components/List";
-import BlogCard from "@/components/BlogCard";
-
-// Utilities
-import sortBlogPostsByDate from "@/utils/sortBlogPostsByDate";
-
-// Data
-import projects from "@/data/projects.json";
-import techStack from "@/data/tech-stack.json";
-import blogs from "@/data/blogs.json";
-
 import Newsletter from "@/components/Newsletter";
+import ProjectList from "@/components/ProjectList";
 
 export default function Page() {
   return (
@@ -69,14 +57,8 @@ export default function Page() {
             </Link>
           </Headline>
 
-          {/* List of projects */}
-          <List
-            items={projects}
-            renderItem={(item) => {
-              return item.featured && <ProjectCard key={item.id} data={item} />;
-            }}
-            columns={3}
-          />
+          {/* List all projects */}
+          <ProjectList columns={3} />
         </Wrapper>
       </Section>
 
@@ -89,12 +71,12 @@ export default function Page() {
           </Headline>
 
           {/* List of skills/tech stack */}
-          <List
+          {/* <List
             items={techStack}
             renderItem={(item) => <SkillCard key={item.id} data={item} />}
             columns={4}
             featured
-          />
+          /> */}
         </Wrapper>
       </Section>
 
@@ -110,16 +92,17 @@ export default function Page() {
           </Headline>
 
           <div className="p-3 border border-dashed border-tertiary-dark rounded-lg">
-            <List
+            {/* <List
               items={blogs}
               renderItem={(item) => <BlogCard key={item.id} data={item} />}
               sortFunction={sortBlogPostsByDate}
               columns={3}
-            />
+            /> */}
           </div>
         </Wrapper>
       </Section>
 
+      {/* Newsletter section */}
       <Section>
         <Wrapper>
           <Newsletter />
