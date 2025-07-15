@@ -23,7 +23,12 @@ export default function Newsletter() {
 function NewsletterForm() {
   return (
     <Form className="space-x-2 w-fit">
-      <FormInput placeholder="email@gmail.com" type="text" />
+      <FormInput
+        type="email"
+        id="email"
+        name="email"
+        placeholder="email@gmail.com"
+      />
       <PrimaryButton type="submit">Sign up</PrimaryButton>
     </Form>
   );
