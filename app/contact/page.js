@@ -93,7 +93,7 @@ export default function Page() {
                     placeholder="Website design..."
                     className="w-full h-full min-h-[9.75rem] 
                     focus:outline-0 focus:border-tertiary 
-                    placeholder-tertiary"
+                    placeholder-tertiary text-sm"
                     required
                   ></textarea>
                 </div>
@@ -110,7 +110,7 @@ export default function Page() {
                     id="timeline"
                     name="timeline"
                     className="text-tertiary placeholder-tertiary 
-                    w-full h-full p-2.5 focus-visible:outline-none"
+                    w-full h-full p-2.5 focus-visible:outline-none text-sm"
                     defaultValue=""
                   >
                     <option value="" disabled>
