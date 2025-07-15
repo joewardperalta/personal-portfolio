@@ -22,7 +22,7 @@ export default function Page() {
               <span className="block">I&apos;m a Full Stack Developer.</span>
             </Title>
 
-            <Paragraph className="max-w-[36rem]">
+            <Paragraph>
               Diploma graduate in Computer Programming & Analysis with 2 years
               of hands-on experience building web applications — ready to
               contribute as a junior full stack developer.
