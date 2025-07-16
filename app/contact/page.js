@@ -1,3 +1,6 @@
+"use client";
+
+// Components
 import Section from "@/components/Section";
 import Headline from "@/components/Headline";
 import {
@@ -10,13 +13,12 @@ import Wrapper from "@/components/Wrapper";
 import Link from "next/link";
 import Form from "next/form";
 import FormInput from "@/components/forms/FormInput";
-import { PrimaryButton, SecondaryButton } from "@/components/Buttons";
 import {
-  CopyIcon,
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-} from "@/components/icons";
+  PrimaryButton,
+  PrimaryCopyButton,
+  SecondaryButton,
+} from "@/components/Buttons";
+import { GitHubIcon, InstagramIcon, LinkedInIcon } from "@/components/icons";
 
 export default function Page() {
   return (
@@ -152,12 +154,9 @@ export default function Page() {
               </Headline>
 
               <div className="flex flex-col gap-3 w-fit">
-                <PrimaryButton className="!lowercase w-fit flex items-center gap-2">
-                  <div className="w-3.5 h-3.5">
-                    <CopyIcon className="stroke-black stroke-1" />
-                  </div>
-                  <Paragraph> joeward_peralta@outlook.com</Paragraph>
-                </PrimaryButton>
+                <PrimaryCopyButton className="!lowercase">
+                  joeward_peralta@outlook.com
+                </PrimaryCopyButton>
                 <SecondaryButton className="!w-full">
                   Book a Call
                 </SecondaryButton>

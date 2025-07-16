@@ -46,7 +46,7 @@ export default function List({
     <>
       {searchable && (
         <div className="w-fit">
-          <Search inputChange={(e) => setSearchString(e.target.value)} />
+          <Search inputChange={(e) => setSearchString(e.currentTarget.value)} />
         </div>
       )}
 
