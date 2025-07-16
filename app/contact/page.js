@@ -19,6 +19,7 @@ import {
   SecondaryButton,
 } from "@/components/Buttons";
 import { GitHubIcon, InstagramIcon, LinkedInIcon } from "@/components/icons";
+import QuestionCard from "@/components/QuestionCard";
 
 export default function Page() {
   return (
@@ -199,6 +200,23 @@ export default function Page() {
               </div>
             </div>
           </div>
+        </Wrapper>
+      </Section>
+
+      <Section>
+        <Wrapper>
+          <Headline>
+            <SectionHeading>Frequently Asked Questions</SectionHeading>
+          </Headline>
+
+          <ul>
+            <li>
+              <QuestionCard
+                question="What services do you offer?"
+                answer="I offer comprehensive web and product design services, including website design, user experience (UX) design, user interface (UI) design, responsive design, prototyping, branding, and usability testing. My goal is to create visually appealing and user-friendly digital experiences that meet your business needs."
+              />
+            </li>
+          </ul>
         </Wrapper>
       </Section>
     </main>

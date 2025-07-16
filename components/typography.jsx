@@ -21,5 +21,5 @@ export function SubHeading({ children, className }) {
 }
 
 export function Paragraph({ children, className }) {
-  return <p className={`max-w-[36rem] ${className}`}>{children}</p>;
+  return <p className={`max-w-[36rem] text-left ${className}`}>{children}</p>;
 }
