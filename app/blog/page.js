@@ -2,10 +2,8 @@ import Section from "@/components/Section";
 import Headline from "@/components/Headline";
 import Wrapper from "@/components/Wrapper";
 import { Title } from "@/components/Typography";
-import SearchProjects from "@/components/SearchProjects";
 
 // Data
-import projects from "@/data/projects.json";
 import BlogList from "@/components/BlogList";
 
 export default function Page() {
