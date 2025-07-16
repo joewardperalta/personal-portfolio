@@ -1,11 +1,22 @@
 import Section from "@/components/Section";
 import Headline from "@/components/Headline";
-import { Paragraph, SectionHeading, Title } from "@/components/Typography";
+import {
+  Paragraph,
+  SectionHeading,
+  SubHeading,
+  Title,
+} from "@/components/Typography";
 import Wrapper from "@/components/Wrapper";
 import Link from "next/link";
 import Form from "next/form";
 import FormInput from "@/components/forms/FormInput";
-import { PrimaryButton } from "@/components/Buttons";
+import { PrimaryButton, SecondaryButton } from "@/components/Buttons";
+import {
+  CopyIcon,
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+} from "@/components/icons";
 
 export default function Page() {
   return (
@@ -37,9 +48,12 @@ export default function Page() {
             className="p-4 border border-dashed border-tertiary-dark 
           rounded-lg w-full"
           >
-            <SectionHeading className="mb-5 text-">
-              Project Inquiry
-            </SectionHeading>
+            <Headline>
+              <SectionHeading className="mb-5 text-">
+                Project Inquiry
+              </SectionHeading>
+            </Headline>
+
             {/* Input name */}
             <Form className="text-secondary space-y-5">
               <div className="flex flex-col gap-2.5">
@@ -110,7 +124,8 @@ export default function Page() {
                     id="timeline"
                     name="timeline"
                     className="text-tertiary placeholder-tertiary 
-                    w-full h-full p-2.5 focus-visible:outline-none text-sm"
+                    w-full h-full p-2.5 focus-visible:outline-none
+                    text-sm"
                     defaultValue=""
                   >
                     <option value="" disabled>
@@ -130,7 +145,61 @@ export default function Page() {
           </div>
 
           {/* Contact information */}
-          <div className="w-full"></div>
+          <div className="w-full space-y-8">
+            <div className="space-y-4">
+              <Headline>
+                <SubHeading className="!text-lg">Let&apos;s Connect</SubHeading>
+              </Headline>
+
+              <div className="flex flex-col gap-3 w-fit">
+                <PrimaryButton className="!lowercase w-fit flex items-center gap-2">
+                  <div className="w-3.5 h-3.5">
+                    <CopyIcon className="stroke-black stroke-1" />
+                  </div>
+                  <Paragraph> joeward_peralta@outlook.com</Paragraph>
+                </PrimaryButton>
+                <SecondaryButton className="!w-full">
+                  Book a Call
+                </SecondaryButton>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <Headline>
+                <SubHeading className="!text-lg">Follow Me</SubHeading>
+              </Headline>
+
+              <div className="flex flex-col gap-3 text-white">
+                <Link
+                  href="/"
+                  className="btn secondary-btn flex items-center gap-2"
+                >
+                  <div className="w-3.5 h-3.5">
+                    <LinkedInIcon />
+                  </div>
+                  <Paragraph>LinkedIn</Paragraph>
+                </Link>
+                <Link
+                  href="/"
+                  className="btn secondary-btn flex items-center gap-2"
+                >
+                  <div className="w-3.5 h-3.5">
+                    <GitHubIcon />
+                  </div>
+                  <Paragraph>GitHub</Paragraph>
+                </Link>
+                <Link
+                  href="/"
+                  className="btn secondary-btn flex items-center gap-2"
+                >
+                  <div className="w-3.5 h-3.5">
+                    <InstagramIcon />
+                  </div>
+                  <Paragraph>Instagram</Paragraph>
+                </Link>
+              </div>
+            </div>
+          </div>
         </Wrapper>
       </Section>
     </main>

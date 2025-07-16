@@ -751,3 +751,18 @@ export function MagnifyingGlass({ className }) {
     </svg>
   );
 }
+
+export function CopyIcon({ className }) {
+  return (
+    <svg
+      id="fi_10075202"
+      enable-background="new 0 0 32 32"
+      height="512"
+      viewBox="0 0 32 32"
+      width="512"
+      className={`w-full h-full ${className}`}
+    >
+      <path d="m26.5 2h-16c-1.9 0-3.5 1.6-3.5 3.5v1.5h-1c-2.2 0-4 1.8-4 4v15c0 2.2 1.8 4 4 4h15c2.2 0 4-1.8 4-4v-1h1.5c1.9 0 3.5-1.6 3.5-3.5v-16c0-1.9-1.6-3.5-3.5-3.5zm-3.5 24c0 1.1-.9 2-2 2h-15c-1.1 0-2-.9-2-2v-15c0-1.1.9-2 2-2h15c1.1 0 2 .9 2 2zm5-4.5c0 .8-.7 1.5-1.5 1.5h-1.5v-12c0-2.2-1.8-4-4-4h-12v-1.5c0-.8.7-1.5 1.5-1.5h16c.8 0 1.5.7 1.5 1.5z"></path>
+    </svg>
+  );
+}

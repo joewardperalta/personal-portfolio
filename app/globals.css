@@ -49,6 +49,7 @@ body {
   transition: all;
   transition-duration: 300ms;
   color: var(--primary-color);
+  width: fit-content;
 }
 .primary-btn:hover {
   background-color: var(--secondary-color-dark);
@@ -60,6 +61,7 @@ body {
   font-weight: 400;
   transition: all;
   transition-duration: 300ms;
+  width: fit-content;
 }
 .secondary-btn:hover {
   background-color: var(--primary-color);
