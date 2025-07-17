@@ -140,7 +140,7 @@ export default function Page() {
                 </div>
               </div>
 
-              <PrimaryButton className="w-full" type="submit">
+              <PrimaryButton className="!w-full" type="submit">
                 Send Inquiry
               </PrimaryButton>
             </Form>
