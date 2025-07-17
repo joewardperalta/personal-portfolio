@@ -1,6 +1,6 @@
 "use client";
 
-import { Paragraph } from "./Typography";
+import { Paragraph } from "./typography";
 import { CopyIcon } from "./icons";
 import { useState } from "react";
 

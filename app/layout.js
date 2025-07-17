@@ -1,7 +1,7 @@
 import { Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { Paragraph } from "@/components/Typography";
+import { Paragraph } from "@/components/typography";
 import Section from "@/components/Section";
 import Wrapper from "@/components/Wrapper";
 import Link from "next/link";

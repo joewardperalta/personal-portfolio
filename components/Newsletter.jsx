@@ -2,7 +2,7 @@ import Form from "next/form";
 import FormInput from "@/components/forms/FormInput";
 import { PrimaryButton } from "@/components/Buttons";
 import Headline from "./Headline";
-import { SectionHeading, Paragraph } from "./Typography";
+import { SectionHeading, Paragraph } from "./typography";
 
 export default function Newsletter() {
   return (

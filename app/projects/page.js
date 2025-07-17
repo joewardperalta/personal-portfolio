@@ -1,6 +1,6 @@
 "use client";
 import Section from "@/components/Section";
-import { Title } from "@/components/Typography";
+import { Title } from "@/components/typography";
 import Headline from "@/components/Headline";
 import Wrapper from "@/components/Wrapper";
 import ProjectList from "@/components/ProjectList";

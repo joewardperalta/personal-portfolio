@@ -1,4 +1,4 @@
-import { Paragraph, SubHeading } from "./Typography";
+import { Paragraph, SubHeading } from "./typography";
 
 export default function ExperienceCard({
   role,

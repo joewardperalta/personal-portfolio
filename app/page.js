@@ -3,7 +3,7 @@ import Link from "next/link";
 import Headline from "@/components/Headline";
 import Section from "@/components/Section";
 import Wrapper from "@/components/Wrapper";
-import { SectionHeading, Paragraph, Title } from "@/components/Typography";
+import { SectionHeading, Paragraph, Title } from "@/components/typography";
 import Newsletter from "@/components/Newsletter";
 import ProjectList from "@/components/ProjectList";
 import BlogList from "@/components/BlogList";

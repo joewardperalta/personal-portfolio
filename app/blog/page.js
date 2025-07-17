@@ -1,7 +1,7 @@
 import Section from "@/components/Section";
 import Headline from "@/components/Headline";
 import Wrapper from "@/components/Wrapper";
-import { Title } from "@/components/Typography";
+import { Title } from "@/components/typography";
 
 // Data
 import BlogList from "@/components/BlogList";

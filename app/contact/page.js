@@ -8,7 +8,7 @@ import {
   SectionHeading,
   SubHeading,
   Title,
-} from "@/components/Typography";
+} from "@/components/typography";
 import Wrapper from "@/components/Wrapper";
 import Link from "next/link";
 import Form from "next/form";

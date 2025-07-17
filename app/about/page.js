@@ -2,7 +2,7 @@
 import Section from "@/components/Section";
 import Wrapper from "@/components/Wrapper";
 import Headline from "@/components/Headline";
-import { Title, Paragraph, SectionHeading } from "@/components/Typography";
+import { Title, Paragraph, SectionHeading } from "@/components/typography";
 import Link from "next/link";
 import Image from "next/image";
 import ExperienceCard from "@/components/ExperienceCard";

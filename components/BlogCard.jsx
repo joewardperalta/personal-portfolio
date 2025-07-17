@@ -1,4 +1,4 @@
-import { Paragraph, SubHeading } from "@/components//Typography";
+import { Paragraph, SubHeading } from "@/components/typography";
 import Image from "next/image";
 import Link from "next/link";
 import formatDate from "@/utils/formatDate";
