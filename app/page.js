@@ -15,7 +15,7 @@ export default function Page() {
     <main className="main-content">
       {/* Hero section */}
       <Section>
-        <Wrapper className="pb-5">
+        <Wrapper className="pb-5 pt-20">
           {/* Main headline */}
           <Headline className="flex flex-col gap-4">
             {/* Status bar */}
