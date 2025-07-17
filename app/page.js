@@ -8,6 +8,7 @@ import Newsletter from "@/components/Newsletter";
 import ProjectList from "@/components/ProjectList";
 import BlogList from "@/components/BlogList";
 import SkillList from "@/components/SkillList";
+import StatusBadge from "@/components/StatusBadge";
 
 export default function Page() {
   return (
@@ -17,6 +18,9 @@ export default function Page() {
         <Wrapper className="pb-5">
           {/* Main headline */}
           <Headline className="flex flex-col gap-4">
+            {/* Status bar */}
+            <StatusBadge status="Available for Work" />
+
             <Title>
               Hey, I&apos;m Joeward.{" "}
               <span className="block">I&apos;m a Full Stack Developer.</span>
