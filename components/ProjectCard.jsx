@@ -15,16 +15,16 @@ export default function ProjectCard({ data }) {
       <Link
         className="rounded-md overflow-hidden block relative border 
         border-tertiary-dark group"
-        href={data.caseStudyLink}
+        href={data.caseStudyUrl}
       >
         {/* Data image */}
         <Image
           className="w-full h-full transition-all duration-300 
           group-hover:scale-105"
-          src={data.photo.src}
+          src="/images/project-sample-1.jpg"
+          alt=""
           width={1920}
           height={1080}
-          alt={data.photo.alt}
         />
 
         {/* Data details */}
@@ -34,7 +34,7 @@ export default function ProjectCard({ data }) {
             rounded-sm capitalize border border-tertiary-dark"
           >
             <SubHeading>{data.title}</SubHeading>
-            <Paragraph className="text-sm">{data.type}</Paragraph>
+            <Paragraph className="text-sm">{data.category}</Paragraph>
           </div>
         </div>
       </Link>
