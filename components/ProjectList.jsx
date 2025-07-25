@@ -21,7 +21,7 @@ export default function ProjectList({ columns = 1, searchable = false }) {
         const response = await fetch(url);
 
         if (!response.ok) {
-          throw new Error(`Resoinse status: ${response.status}`);
+          throw new Error(`Receive status: ${response.status}`);
         }
 
         const result = await response.json();
