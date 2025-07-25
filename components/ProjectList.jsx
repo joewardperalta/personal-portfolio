@@ -7,9 +7,11 @@ import List from "./List";
 
 // Data
 import ProjectCard from "./ProjectCard";
+import Placeholder from "./Placeholder";
 
 export default function ProjectList({ columns = 1, searchable = false }) {
-  const [projects, setProjects] = useState();
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
@@ -29,17 +31,25 @@ export default function ProjectList({ columns = 1, searchable = false }) {
       }
     }
 
-    fetchData();
-  }, []);
+    if (projects.length > 0) {
+      setLoading(false);
+    }
 
-  return (
-    <>
-      <List
-        items={projects}
-        renderItem={(item) => <ProjectCard data={item} key={item._id} />}
-        searchable={searchable}
-        columns={columns}
-      />
-    </>
+    fetchData();
+  }, [projects]);
+
+  return loading ? (
+    <div className="grid grid-cols-3 gap-4">
+      {Array.from({ length: 3 }).map(() => (
+        <Placeholder />
+      ))}
+    </div>
+  ) : (
+    <List
+      items={projects}
+      renderItem={(item) => <ProjectCard data={item} key={item._id} />}
+      searchable={searchable}
+      columns={columns}
+    />
   );
 }

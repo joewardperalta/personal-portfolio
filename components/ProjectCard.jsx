@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { SubHeading, Paragraph } from "@/components/typography";
@@ -11,7 +12,7 @@ import { SubHeading, Paragraph } from "@/components/typography";
  */
 export default function ProjectCard({ data }) {
   return (
-    <li className="w-full relative">
+    <li className="w-full h-full relative">
       <Link
         className="rounded-md overflow-hidden block relative border 
         border-tertiary-dark group"
@@ -21,10 +22,11 @@ export default function ProjectCard({ data }) {
         <Image
           className="w-full h-full transition-all duration-300 
           group-hover:scale-105"
-          src="/images/project-sample-1.jpg"
+          src={data.photo.src}
           alt=""
           width={1920}
           height={1080}
+          priority
         />
 
         {/* Data details */}
