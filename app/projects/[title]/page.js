@@ -11,7 +11,7 @@ export default function Page({ params }) {
   useEffect(() => {
     async function fetchData() {
       const { title } = await params;
-      const url = process.env.NEXT_PUBLIC_SERVER_URL + `projects/${title}`;
+      const url = process.env.NEXT_PUBLIC_SERVER_URL + `/projects/${title}`;
 
       try {
         // Fetch the project
