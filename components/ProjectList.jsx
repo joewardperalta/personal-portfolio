@@ -13,9 +13,10 @@ export default function ProjectList({ columns = 1, searchable = false }) {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // Fetches project resources from the server
   useEffect(() => {
     async function fetchData() {
-      const url = process.env.NEXT_PUBLIC_SERVER_URL + "projects";
+      const url = process.env.NEXT_PUBLIC_SERVER_URL + "/projects";
 
       try {
         const response = await fetch(url);
